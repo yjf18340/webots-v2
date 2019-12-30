@@ -1,13 +1,15 @@
-#VRML_SIM R2019a utf8
+#VRML_SIM R2019b utf8
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.9950444818136839 -0.01573439056941627 0.09817794133890874 1.78772397779802
-  position -0.11228453298302465 5.473540146189754 -1.4198747158373517
+  orientation -0.4565313161280343 -0.8660930877926997 0.20362200439076278 0.38605388785987993
+  position -2.0075405841254743 1.9364298430222697 6.102838477601943
 }
 TexturedBackground {
+  texture "noon_park_empty"
 }
 TexturedBackgroundLight {
+  texture "noon_park_empty"
 }
 RectangleArena {
   floorSize 3 3
@@ -35,7 +37,7 @@ DEF Cynlinder Solid {
   name "cylinder"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation 0.0770813 0.05 0.758703
   children [
     DEF CynShape Shape {
@@ -53,7 +55,7 @@ DEF Cynlinder Solid {
   name "cylinder(1)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation -1.25564 0.05 0.646333
   children [
     DEF CynShape Shape {
@@ -71,7 +73,7 @@ DEF Cynlinder Solid {
   name "cylinder(2)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation -1.10858 0.05 -0.87216
   children [
     DEF CynShape Shape {
@@ -89,7 +91,7 @@ DEF Cynlinder Solid {
   name "cylinder(3)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation -0.909759 0.05 -0.615276
   children [
     DEF CynShape Shape {
@@ -107,7 +109,7 @@ DEF Cynlinder Solid {
   name "cylinder(4)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation 0.0168672 0.05 -0.667646
   children [
     DEF CynShape Shape {
@@ -125,7 +127,7 @@ DEF Cynlinder Solid {
   name "cylinder(5)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation 0.898155 0.05 -0.742667
   children [
     DEF CynShape Shape {
@@ -143,7 +145,7 @@ DEF Cynlinder Solid {
   name "cylinder(6)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation 0.752666 0.05 0.397643
   children [
     DEF CynShape Shape {
@@ -161,7 +163,7 @@ DEF Cynlinder Solid {
   name "cylinder(7)"
   boundingObject USE CynShape
 }
-DEF Cynlinder Solid {
+Solid {
   translation 0.571707 0.05 0.997768
   children [
     DEF CynShape Shape {
@@ -179,7 +181,7 @@ DEF Cynlinder Solid {
   name "cylinder(8)"
   boundingObject USE CynShape
 }
-DEF GREEN_BOX Solid {
+DEF BOX Solid {
   translation -0.802873 0.05 0.893719
   children [
     Shape {
@@ -193,7 +195,7 @@ DEF GREEN_BOX Solid {
       }
     }
   ]
-  name "green box(3)"
+  name "green box"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -202,7 +204,7 @@ DEF GREEN_BOX Solid {
     geometry USE BOX0
   }
 }
-DEF GREEN_BOX Solid {
+Solid {
   translation -0.33918242786097275 0.05 1.1940807183760147
   children [
     Shape {
@@ -225,7 +227,7 @@ DEF GREEN_BOX Solid {
     geometry USE BOX0
   }
 }
-DEF GREEN_BOX Solid {
+Solid {
   translation -0.0635739492744482 0.05 -1.3686883369175478
   rotation 0 1 0 0.7853981610000004
   children [
@@ -240,7 +242,7 @@ DEF GREEN_BOX Solid {
       }
     }
   ]
-  name "green box(1)"
+  name "green box(3)"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -249,7 +251,7 @@ DEF GREEN_BOX Solid {
     geometry USE BOX0
   }
 }
-DEF GREEN_BOX Solid {
+Solid {
   translation -1.27644 0.05 1.14334
   children [
     Shape {
@@ -272,7 +274,7 @@ DEF GREEN_BOX Solid {
     geometry USE BOX0
   }
 }
-DEF GREEN_BOX Solid {
+Solid {
   translation -0.9386374206257768 0.05 0.20116655756455248
   rotation -2.956558841448767e-16 -1 1.2246467991473532e-16 0.7853981801795871
   scale 1.8403099339276179 1.8403099339276179 1.8403099339276179
@@ -288,7 +290,7 @@ DEF GREEN_BOX Solid {
       }
     }
   ]
-  name "green box(8)"
+  name "green box(5)"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -297,7 +299,7 @@ DEF GREEN_BOX Solid {
     geometry USE BOX0
   }
 }
-DEF GREEN_BOX Solid {
+Solid {
   translation -0.05 0.05 -0.25
   children [
     Shape {
@@ -311,7 +313,7 @@ DEF GREEN_BOX Solid {
       }
     }
   ]
-  name "green box(7)"
+  name "green box(6)"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -345,7 +347,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 0.26575713696766556 0.04999999999999956 -0.49742424774896343
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -370,7 +372,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 0.876101906524707 0.04999999999999956 -0.015807605289340387
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -395,7 +397,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 0.9987005097323014 0.04999999999999956 -1.1220679147760797
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -420,7 +422,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 0.6343115733806294 0.04999999999999956 -1.3904730390501339
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -445,7 +447,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 1.112525742526521 0.05000000000000045 0.8897535012370201
   rotation 0 1 0 5.284188352999999
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -470,7 +472,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 1.07932 0.05 1.25
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -495,7 +497,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation 1.0983668535890256 0.05 -0.3069956555599993
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -520,7 +522,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation -0.5620068899054848 0.05 -0.2613508774176183
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -545,7 +547,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation -0.43033399356155955 0.0499999999999889 -1.1130778433146995
   rotation 0 1 0 0.31
   scale 1.6804604038730084 1.6804604038730084 1.6804604038730084
@@ -570,7 +572,7 @@ DEF BLUE_BOX Solid {
     geometry USE BOX1
   }
 }
-DEF BLUE_BOX Solid {
+Solid {
   translation -0.2659583718196481 0.04999999999999068 0.20326039723139777
   rotation 0 1 0 0.31
   children [
@@ -618,7 +620,7 @@ DEF YELLOW_BOX Solid {
     geometry USE BOX2
   }
 }
-DEF YELLOW_BOX Solid {
+Solid {
   translation 0.43298074647524554 0.04999999999999201 -1.041060519656352
   rotation 0 1 0 0.4
   scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
@@ -643,7 +645,7 @@ DEF YELLOW_BOX Solid {
     geometry USE BOX2
   }
 }
-DEF YELLOW_BOX Solid {
+Solid {
   translation -0.3137103713711371 0.05 0.703911189847435
   rotation 0 1 0 0.4
   scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
@@ -668,7 +670,7 @@ DEF YELLOW_BOX Solid {
     geometry USE BOX2
   }
 }
-DEF YELLOW_BOX Solid {
+Solid {
   translation 0.3288203911599286 0.050000000000016434 1.2763181552079503
   rotation 0 1 0 4.850589579
   scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
@@ -693,7 +695,7 @@ DEF YELLOW_BOX Solid {
     geometry USE BOX2
   }
 }
-DEF YELLOW_BOX Solid {
+Solid {
   translation 0.3288203911599286 0.050000000000016434 1.2763181552079503
   rotation 0 1 0 4.850589579
   scale 1.1606858195656995 1.1606858195656995 1.1606858195656995
@@ -732,7 +734,7 @@ DEF PINK_BOX Solid {
       }
     }
   ]
-  name "red box"
+  name "pink box"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -741,7 +743,7 @@ DEF PINK_BOX Solid {
     geometry USE BOX3
   }
 }
-DEF PINK_BOX Solid {
+Solid {
   translation 1.2066958475837777 0.05 0.21698705096359616
   rotation 0 1 0 5.23598774
   scale 1.5911832712060372 1.5911832712060372 1.5911832712060372
@@ -757,7 +759,7 @@ DEF PINK_BOX Solid {
       }
     }
   ]
-  name "red box(2)"
+  name "pink box(2)"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -766,7 +768,7 @@ DEF PINK_BOX Solid {
     geometry USE BOX3
   }
 }
-DEF PINK_BOX Solid {
+Solid {
   translation -0.35842005485769635 0.05 -0.8313913463927661
   rotation 0 1 0 5.23598774
   scale 1.5911832712060372 1.5911832712060372 1.5911832712060372
@@ -782,7 +784,7 @@ DEF PINK_BOX Solid {
       }
     }
   ]
-  name "red box(1)"
+  name "pink box(3)"
   boundingObject Shape {
     appearance PBRAppearance {
       roughness 1.1102230246251565e-16
@@ -791,7 +793,7 @@ DEF PINK_BOX Solid {
     geometry USE BOX3
   }
 }
-DEF COMPASS_ROBOT Robot {
+DEF ROBOT Robot {
   translation -1.45 -0.000228847 -1.45
   rotation 0.9999836302299145 -0.005717119212107609 0.00023199162857716858 0.026187190536750133
   scale 0.6 0.6 0.6
@@ -831,8 +833,8 @@ DEF COMPASS_ROBOT Robot {
         }
       ]
       endPoint Solid {
-        translation -0.045214834778722186 0.025012881946169095 -3.761714801804752e-05
-        rotation -0.9999848751759184 0.004774017146430756 0.0027309668047671557 4.158360764341844
+        translation -0.0452148347787222 0.025012881946169095 -3.761714801804754e-05
+        rotation -0.9999848751759184 0.004774017146430764 0.00273096680476716 4.158360764341844
         children [
           DEF WHEEL Transform {
             rotation 0 0 1 1.57
@@ -875,8 +877,8 @@ DEF COMPASS_ROBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0.045215134318342655 0.024992573963051268 -4.9673128918328056e-05
-        rotation 0.9999881894911966 -0.004820617117715446 -0.0006184890646577069 2.8382055729194478
+        translation 0.045215134318342655 0.024992573963051268 -4.9673128918328124e-05
+        rotation 0.9999881894911966 -0.004820617117715444 -0.0006184890646577069 2.8382055729194478
         children [
           USE WHEEL
         ]
@@ -1098,8 +1100,8 @@ DEF COMPASS_ROBOT Robot {
       }
     }
   ]
-  name "MyBot"
-  boundingObject DEF MYBOT_BOUNDING Transform {
+  name "mRobot"
+  boundingObject Transform {
     translation 0 0.0414 0
     rotation 0 1 0 -1.5708003061004252
     children [
@@ -1135,7 +1137,7 @@ Robot {
         }
       ]
       endPoint DEF EPUCK_LEFT_WHEEL Solid {
-        translation -0.025999102085574044 0.020001245376979015 3.44033934736779e-06
+        translation -0.02599910208557403 0.020001245376979015 3.4403393473677885e-06
         rotation 0.9999999999372848 -1.0305164240584763e-05 4.385655980439503e-06 0.6536558701647526
         children [
           DEF EPUCK_WHEEL Transform {
@@ -1291,7 +1293,7 @@ Robot {
       ]
       endPoint DEF EPUCK_RIGHT_WHEEL Solid {
         translation 0.02599948831801295 0.01999890793578413 1.7084201459777574e-06
-        rotation 0.9999999999886998 -1.8887382681523278e-06 4.362719372009218e-06 1.4118631075562897
+        rotation 0.9999999999886996 -1.8887382681523274e-06 4.362719372009218e-06 1.4118631075562897
         children [
           Transform {
             rotation 0 1 0 3.14159
@@ -2450,7 +2452,7 @@ Robot {
       0 0 0
     ]
   }
-  controller "Epuck_avoid"
+  controller "Obstacles"
   cpuConsumption 1.11
   window "e-puck"
   remoteControl "e-puck_bluetooth"

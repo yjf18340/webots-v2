@@ -2,7 +2,7 @@ import com.cyberbotics.webots.controller.Robot;
 import com.cyberbotics.webots.controller.DistanceSensor;
 import com.cyberbotics.webots.controller.Motor;
 
-public class Epuck_avoid {
+public class Obstacles {
 
   public static void main(String[] args) {
   
